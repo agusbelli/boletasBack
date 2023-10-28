@@ -29,7 +29,7 @@ model Producto{
 model Registro{
   id Int @id @default(autoincrement())
   fecha DateTime @default(now())
-  costo Int
+  costo String
   tipoCantidad TipoCantidad @default(KG)
   cantidad String
   idProducto Int
